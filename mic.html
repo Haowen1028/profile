@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav {
+        width: 100vw;
+        height: 8vh;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #logo {
+        width: 10%;
+        height: 100%;
+        /* margin-left: 40px; */
+        /* background-color: brown; */
+    }
+
+    .logo_img {
+        width: 70%;
+        height: 100%;
+        background-image: url("img/RE1Mu3b.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-left: 60px;
+    }
+
+    .menu {
+        width: 40%;
+        height: 100%;
+        /* background-color: black; */
+    }
+
+    #navmenu {
+        display: flex;
+        justify-content: start;
+    }
+
+    .Options {
+        padding: 5px;
+        text-align: center;
+        font-size: 14px;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 10px 15px 5px 15px;
+        text-decoration: none;
+    }
+
+    #usermenu {
+        display: flex;
+        justify-content: flex-end;
+        text-align: center;
+        align-items: center;
+        font-size: 14px;
+        font-family: 'Times New Roman', Times, serif;
+        padding-right: 30px;
+        /* background-color: beige; */
+    }
+
+    .user {
+        padding-right: 30px;
+
+    }
+
+    #Search {
+        background-color: white;
+    }
+
+    #Search::after {
+        background-color: white;
+    }
+
+    #user_img {
+        width: 20px;
+        height: 40px;
+        background-color: aqua;
+        border-radius: 100%;
+    }
+    select{
+        border: none;
+    }
+    .box{
+        width: 100%;
+        height: 300px;
+    }
+</style>
+
+<body>
+    <div class="nav">
+        <div id="logo">
+            <div class="logo_img"></div>
+        </div>
+        <div id="navmenu" class="menu">
+            <a href="https://www.microsoft.com/zh-tw/microsoft-365" id="microsoft" class="Options">Microsoft365</a>
+            <a href="https://www.microsoft.com/zh-tw/microsoft-teams/group-chat-software" id="Teams"
+                class="Options">Teams</a>
+            <a href="https://www.microsoft.com/zh-tw/windows/?r=1" id="Windows" class="Options">Windows</a>
+            <a href="https://www.microsoft.com/en-us/surface" id="Surface" class="Options">Surface</a>
+            <a href="https://www.xbox.com/zh-TW/" id="Xbox" class="Options">Xbox</a>
+            <a href="https://support.microsoft.com/zh-tw" id="support" class="Options">support</a>
+        </div>
+        <div id="usermenu" class="menu">
+            <!-- <select id="all" class="user"></select> -->\
+            <label for="all">所有選項</label>
+            <select id="all" name="all"></select>\
+            <div id="Search" class="user">搜尋</div>
+            <div id="shopcar" class="user">購物</div>
+            <div id="login" class="user">登入</div>
+            <div id="user_img" class="user"></div>
+        </div>
+    </div>
+    <div class="box-swiper">
+        
+    </div>
+
+</body>
+
+</html>
